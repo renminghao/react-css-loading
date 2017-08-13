@@ -1,6 +1,7 @@
 var webpack = require('webpack')
 var path = require('path')
-
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var autoprefixer = require('autoprefixer')
 module.exports = {
   context : process.cwd(),
   entry : {
@@ -12,6 +13,20 @@ module.exports = {
     publicPath : '/static/',
     libraryTarget : 'umd',
     library : 'webpack'
+  },
+  externals : {
+    'react' : {
+      commonjs : 'react',
+      commonjs2 : 'react',
+      amd : 'react',
+      root : 'React'
+    },
+    'react-dom' : {
+      commonjs : 'react-dom',
+      commonjs2 : 'react-dom',
+      amd : 'react-dom',
+      root : 'ReactDOM'
+    }
   },
   module : {
     loaders : [
@@ -25,18 +40,23 @@ module.exports = {
     },
     {
       test : /\.less$/,
-      loaders : ['style-loader','css-loader','less-loader']
+      loader:  ExtractTextPlugin.extract('css-loader!postcss-loader!less-loader'),
+      exclude : /node_modules/
     },
     {
       test : /\.json/,
       loader: 'json-loader!strip-json-comments'
     },
     {
-      test:/.(png)|(jpg)$/, 
+      test:/.(png)|(jpg)$/,
       loader: "url-loader?limit=50000"
     }]
   },
   plugins : [
+      new ExtractTextPlugin({
+        filename: '[name].css',
+        allChunks: true
+      }),
       new webpack.ProgressPlugin((percentage, msg) => {
         const stream = process.stderr;
         if (stream.isTTY && percentage < 0.71) {

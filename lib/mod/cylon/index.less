@@ -1,0 +1,43 @@
+@keyframes transform {
+  0%{
+    left: 0px;
+  }
+  50% {
+    left: 80px;
+  }
+  100%{
+    left: 0px;
+  }
+}
+.react-loading-css-cylon {
+  width: 100px;
+  height: 100px;
+  border:1px solid #ededed;
+  overflow: hidden;
+}
+.react-loading-css-cylon-item{
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  background: #000;
+  box-sizing: border-box;
+  margin-top: -50px;
+  top: 50%;
+  left:0;
+  animation-name: transform;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier();
+  animation-iteration-count: infinite;
+}
+
+.react-loading-css-cylon-animation-item1 {
+  animation-delay: 0s;
+}
+.react-loading-css-cylon-animation-item2 {
+  animation-delay: 0.1s;
+  opacity: 0.5;
+}
+.react-loading-css-cylon-animation-item3 {
+  animation-delay: 0.2s;
+  opacity: 0.3;
+}

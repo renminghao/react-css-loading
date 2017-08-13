@@ -1,0 +1,39 @@
+@keyframes goOn {
+  0%{
+    left: -32px;
+  }
+  100%{
+    left: 3px;
+  }
+}
+.react-loading-css-ball {
+  width: 100px;
+  height: 100px;
+  border:1px solid #ededed;
+  overflow: hidden;
+}
+.react-loading-css-ball-scroll{
+  width: 140px;
+  height: 100%;
+  left : -33px;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  animation-name: goOn;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-timing-function: cubic-bezier();
+  animation-iteration-count: infinite;
+}
+.react-loading-css-ball .react-loading-css-ball-item{
+  flex : 1;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #000;
+  box-sizing: border-box;
+  margin-right: 10px;
+}

@@ -1,0 +1,344 @@
+@-webkit-keyframes goOn {
+  0% {
+    left: -32px;
+  }
+  100% {
+    left: 3px;
+  }
+}
+@keyframes goOn {
+  0% {
+    left: -32px;
+  }
+  100% {
+    left: 3px;
+  }
+}
+.react-loading-css-ball {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ededed;
+  overflow: hidden;
+}
+.react-loading-css-ball-scroll {
+  width: 140px;
+  height: 100%;
+  left: -33px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation-name: goOn;
+          animation-name: goOn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: cubic-bezier();
+          animation-timing-function: cubic-bezier();
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.react-loading-css-ball .react-loading-css-ball-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 10px;
+}
+@-webkit-keyframes scale {
+  0% {
+    height: 30px;
+  }
+  50% {
+    height: 50px;
+  }
+  100% {
+    height: 30px;
+  }
+}
+@keyframes scale {
+  0% {
+    height: 30px;
+  }
+  50% {
+    height: 50px;
+  }
+  100% {
+    height: 30px;
+  }
+}
+.react-loading-css-bar {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ededed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+}
+.react-loading-css-bar .react-loading-css-bar-item {
+  display: inline-block;
+  width: 20px;
+  height: 30px;
+  background: #000;
+  margin-right: 5px;
+  -webkit-animation-name: scale;
+          animation-name: scale;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier();
+          animation-timing-function: cubic-bezier();
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.react-loading-css-bar-animation-item1 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+.react-loading-css-bar-animation-item2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.react-loading-css-bar-animation-item3 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.react-loading-css-bar-animation-item4 {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+@-webkit-keyframes sale {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+@keyframes sale {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+.react-loading-css-bubbles {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ededed;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.react-loading-css-bubbles-item {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 3px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-animation-name: sale;
+          animation-name: sale;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier();
+          animation-timing-function: cubic-bezier();
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.react-loading-css-bubbles-animation-item1 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+.react-loading-css-bubbles-animation-item2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.react-loading-css-bubbles-animation-item3 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+@-webkit-keyframes transform {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 80px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@keyframes transform {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 80px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+.react-loading-css-cylon {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ededed;
+  overflow: hidden;
+}
+.react-loading-css-cylon-item {
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  background: #000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: -50px;
+  top: 50%;
+  left: 0;
+  -webkit-animation-name: transform;
+          animation-name: transform;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier();
+          animation-timing-function: cubic-bezier();
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.react-loading-css-cylon-animation-item1 {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+.react-loading-css-cylon-animation-item2 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+  opacity: 0.5;
+}
+.react-loading-css-cylon-animation-item3 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  opacity: 0.3;
+}
+@-webkit-keyframes rotateAnimation {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotateAnimation {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.react-loading-css-spin {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ededed;
+  overflow: hidden;
+  position: relative;
+}
+.react-loading-css-spin-item,
+.react-loading-css-spin-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 10px solid #000;
+  background: transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  opacity: 0.2;
+}
+.react-loading-css-spin-item {
+  z-index: 999;
+}
+.react-loading-css-spin-content {
+  opacity: 1;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-animation-name: rotateAnimation;
+          animation-name: rotateAnimation;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.react-loading-css-spin-content .react-loading-css-spin-content-block1 {
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+}
+.react-loading-css-spin-content .react-loading-css-spin-content-block2 {
+  background: #fff;
+  position: absolute;
+  left: -10px;
+  top: 40px;
+  width: 100px;
+  height: 50px;
+}

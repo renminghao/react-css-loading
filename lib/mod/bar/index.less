@@ -1,0 +1,46 @@
+@keyframes scale {
+  0%{
+    height: 30px;
+  }
+  50%{
+    height: 50px;
+  }
+  100%{
+    height: 30px;
+  }
+}
+.react-loading-css-bar {
+  width: 100px;
+  height: 100px;
+  border:1px solid #ededed;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  padding:10px;
+}
+.react-loading-css-bar .react-loading-css-bar-item{
+  display: inline-block;
+  width: 20px;
+  height: 30px;
+  background: #000;
+  margin-right: 5px;
+  animation-name: scale;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier();
+  animation-iteration-count: infinite;
+}
+.react-loading-css-bar-animation-item1{
+  animation-delay: 0s;
+}
+.react-loading-css-bar-animation-item2{
+  animation-delay: 0.3s;
+}
+.react-loading-css-bar-animation-item3{
+  animation-delay: 0.5s;
+}
+.react-loading-css-bar-animation-item4{
+  animation-delay: 0.7s;
+}
